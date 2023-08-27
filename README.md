@@ -7,9 +7,9 @@
 ___
 ### ⚙️ Public API methods as service. With Auth: X-AUTH-TOKEN
 
-| METHOD | ENDPOINT                               |
-|--------|----------------------------------------|
-| GET    | {GATEWAY_URL}/checkmail/v1/data/{data} |
+| METHOD | ENDPOINT                           |
+|--------|------------------------------------|
+| POST   | {GATEWAY_URL}/checkmail/v1/inspect |
 
 ___
 ### 📱 Public REST API methods as backend Billing APP. Without Auth, but with reCAPTCHA
@@ -20,7 +20,7 @@ ___
 | POST   | {GATEWAY_URL}/auth/v1/user/confirm-registration |
 | POST   | {GATEWAY_URL}/auth/v1/user/login                |
 | POST   | {GATEWAY_URL}/auth/v1/user/reset-password       |
-| POST   | {GATEWAY_URL}/checkmail/v1/datapub/{data}       |
+| POST   | {GATEWAY_URL}/checkmail/v1/inspect              |
 | POST   | {GATEWAY_URL}/checkmail/v1/domains/count        |
 
 ___
