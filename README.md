@@ -7,9 +7,9 @@
 ___
 ### ⚙️ Public API methods as service. With Auth: X-AUTH-TOKEN
 
-| METHOD | ENDPOINT                           |
-|--------|------------------------------------|
-| POST   | {GATEWAY_URL}/checkmail/v1/inspect |
+| METHOD | ENDPOINT                  |
+|--------|---------------------------|
+| POST   | {API_URL}/v1/data/inspect |
 
 ___
 ### 📱 Public REST API methods as backend Billing APP. Without Auth, but with reCAPTCHA
@@ -20,8 +20,10 @@ ___
 | POST   | {GATEWAY_URL}/auth/v1/user/confirm-registration |
 | POST   | {GATEWAY_URL}/auth/v1/user/login                |
 | POST   | {GATEWAY_URL}/auth/v1/user/reset-password       |
-| POST   | {GATEWAY_URL}/checkmail/v1/inspect              |
 | POST   | {GATEWAY_URL}/checkmail/v1/domains/count        |
+| POST   | {GATEWAY_URL}/checkmail/v1/data/inspect         |
+| POST   | {GATEWAY_URL}/checkmail/v1/filter               |
+| POST   | {GATEWAY_URL}/mail/v1/feedback                  |
 
 ___
 ### 📲 Public REST API methods as backend Billing APP. With Auth: Bearer Token - [Startup, Business Roles]
@@ -44,7 +46,7 @@ ___
 | POST   | {GATEWAY_URL}/auth/v1/user/logout               |
 | POST   | {GATEWAY_URL}/auth/v1/token/refresh             |
 | GET    | {GATEWAY_URL}/checkmail/v1/domains/{domainName} |
-| GET    | {GATEWAY_URL}/checkmail/v1/domains              |
+| POST   | {GATEWAY_URL}/checkmail/v1/domains              |
 | PATCH  | {GATEWAY_URL}/checkmail/v1/domains/{domainName} |
 | DEL    | {GATEWAY_URL}/checkmail/v1/domains/{domainName} |
 | GET    | {GATEWAY_URL}/lookup/v1/mxrecords               |
