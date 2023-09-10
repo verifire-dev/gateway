@@ -12,6 +12,13 @@ ___
 | POST   | {API_URL}/v1/data/inspect |
 
 ___
+### ⚙️ [DEPRECATED] Public API methods as service. Proxy Adapter that uses the checkmail-service. With Auth: Bearer Token
+
+| METHOD | ENDPOINT                  |
+|--------|---------------------------|
+| GET    | {API_URL}/domain/check    |
+
+___
 ### 📱 Public REST API methods as backend Billing APP. Without Auth, but with reCAPTCHA
 
 | METHOD | ENDPOINT                                        |
