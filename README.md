@@ -29,7 +29,7 @@ ___
 | POST   | {GATEWAY_URL}/auth/v1/user/reset-password       |
 | POST   | {GATEWAY_URL}/checkmail/v1/domains/count        |
 | POST   | {GATEWAY_URL}/checkmail/v1/data/inspect         |
-| POST   | {GATEWAY_URL}/checkmail/v1/filter               |
+| POST   | {GATEWAY_URL}/checkmail/v1/filters              |
 | POST   | {GATEWAY_URL}/mail/v1/feedback                  |
 
 ___
@@ -39,6 +39,7 @@ ___
 |--------|-----------------------------------------------|
 | POST   | {GATEWAY_URL}/auth/v1/user/logout             |
 | POST   | {GATEWAY_URL}/auth/v1/token/refresh           |
+| GET    | {GATEWAY_URL}/auth/v1/user                    |
 | GET    | {GATEWAY_URL}/project/v1/projects             |
 | GET    | {GATEWAY_URL}/project/v1/projects/{projectId} |
 | POST   | {GATEWAY_URL}/project/v1/projects             |
