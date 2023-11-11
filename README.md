@@ -5,6 +5,7 @@
 ![Schema of microservices](./verifire-microservices.drawio.png)
 
 ___
+
 ### ⚙️ Public API methods as service. With Auth: X-AUTH-TOKEN
 
 | METHOD | ENDPOINT                  |
@@ -12,34 +13,37 @@ ___
 | POST   | {API_URL}/v1/data/inspect |
 
 ___
+
 ### ⚙️ [DEPRECATED] Public API methods as service. Proxy Adapter that uses the checkmail-service. With Auth: Bearer Token
 
-| METHOD | ENDPOINT                  |
-|--------|---------------------------|
-| GET    | {API_URL}/domain/check    |
+| METHOD | ENDPOINT               |
+|--------|------------------------|
+| GET    | {API_URL}/domain/check |
 
 ___
+
 ### 📱 Public REST API methods as backend Billing APP. Without Auth, but with reCAPTCHA
 
-| METHOD | ENDPOINT                                        |
-|--------|-------------------------------------------------|
-| POST   | {GATEWAY_URL}/auth/v1/user/register             |
-| POST   | {GATEWAY_URL}/auth/v1/user/confirm-registration |
-| POST   | {GATEWAY_URL}/auth/v1/user/login                |
-| POST   | {GATEWAY_URL}/auth/v1/user/reset-password       |
-| POST   | {GATEWAY_URL}/checkmail/v1/domains/count        |
-| POST   | {GATEWAY_URL}/checkmail/v1/data/inspect         |
-| POST   | {GATEWAY_URL}/checkmail/v1/filters              |
-| POST   | {GATEWAY_URL}/mail/v1/feedback                  |
+| METHOD | ENDPOINT                                 |
+|--------|------------------------------------------|
+| POST   | {GATEWAY_URL}/auth/v1/sign-up            |
+| POST   | {GATEWAY_URL}/auth/v1/confirm            |
+| POST   | {GATEWAY_URL}/auth/v1/sign-in            |
+| POST   | {GATEWAY_URL}/auth/v1/reset-password     |
+| POST   | {GATEWAY_URL}/checkmail/v1/domains/count |
+| POST   | {GATEWAY_URL}/checkmail/v1/data/inspect  |
+| POST   | {GATEWAY_URL}/checkmail/v1/filters       |
+| POST   | {GATEWAY_URL}/mail/v1/feedback           |
 
 ___
-### 📲 Public REST API methods as backend Billing APP. With Auth: Bearer Token - [Startup, Business Roles]
+
+### 📲 Public REST API methods as backend Billing APP. With Auth: Bearer Token - [Customer Role]
 
 | METHOD | ENDPOINT                                      |
 |--------|-----------------------------------------------|
-| POST   | {GATEWAY_URL}/auth/v1/user/logout             |
+| POST   | {GATEWAY_URL}/auth/v1/sign-out                |
 | POST   | {GATEWAY_URL}/auth/v1/token/refresh           |
-| GET    | {GATEWAY_URL}/auth/v1/user                    |
+| GET    | {GATEWAY_URL}/customer/v1/customers           |
 | GET    | {GATEWAY_URL}/project/v1/projects             |
 | GET    | {GATEWAY_URL}/project/v1/projects/{projectId} |
 | POST   | {GATEWAY_URL}/project/v1/projects             |
@@ -47,11 +51,12 @@ ___
 | DEL    | {GATEWAY_URL}/project/v1/projects/{projectId} |
 
 ___
-### 🛠 Public REST API methods as backend Support Panel APP : Bearer Token - [Admin, Support Roles]
+
+### 🛠 Public REST API methods as backend Support Panel APP : Bearer Token - [Staff Role]
 
 | METHOD | ENDPOINT                                        |
 |--------|-------------------------------------------------|
-| POST   | {GATEWAY_URL}/auth/v1/user/logout               |
+| POST   | {GATEWAY_URL}/auth/v1/sign-out                  |
 | POST   | {GATEWAY_URL}/auth/v1/token/refresh             |
 | GET    | {GATEWAY_URL}/checkmail/v1/domains/{domainName} |
 | POST   | {GATEWAY_URL}/checkmail/v1/domains              |
