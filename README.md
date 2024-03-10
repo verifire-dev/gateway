@@ -1,4 +1,4 @@
-# verifire-gateway
+# gateway
 
 ### 💎 Pretty simple Nginx Gateway configuration for microservices.
 

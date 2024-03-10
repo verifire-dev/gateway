@@ -634,7 +634,7 @@
         <mxCell id="A7bG10cvLb7iZubDScCu-52" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="463.7" y="780" width="170" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="A7bG10cvLb7iZubDScCu-53" value="MailHog API&lt;br&gt;SMTP Testing" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="A7bG10cvLb7iZubDScCu-53" value="Mailhog API&lt;br&gt;SMTP Testing" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="483.7" y="890" width="130" height="50" as="geometry" />
         </mxCell>
         <mxCell id="A7bG10cvLb7iZubDScCu-54" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" parent="1" vertex="1">
